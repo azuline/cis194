@@ -1,0 +1,7 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "cis194:lib"
+
+    - path: "./tests"
+      component: "cis194:test:tests"
