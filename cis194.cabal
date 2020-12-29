@@ -13,8 +13,9 @@ extra-source-files:  README.md
 
 library
   ghc-options:       -Wall
-  exposed-modules:   Week01.CardValidator,
-                     Week01.TowerOfHanoi
+  exposed-modules:   Week01.CardValidator
+                   , Week01.TowerOfHanoi
+                   , Week02.LogAnalysis
   hs-source-dirs:    src
   default-language:  Haskell2010
   build-depends:     base >= 4.7 && < 5
@@ -25,6 +26,6 @@ test-suite tests
   main-is:           Spec.hs
   hs-source-dirs:    tests
   default-language:  Haskell2010
-  build-depends:     base >= 4.7 && < 5,
-                     cis194,
-                     hspec
+  build-depends:     base >= 4.7 && < 5
+                   , cis194
+                   , hspec
