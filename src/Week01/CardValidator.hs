@@ -4,9 +4,7 @@ toDigits :: Integer -> [Integer]
 toDigits = reverse . toDigitsRev
 
 toDigitsRev :: Integer -> [Integer]
-toDigitsRev x
-  | x <= 0    = []
-  | otherwise = (x `rem` 10) : toDigitsRev (x `div` 10)
+toDigitsRev = map (`rem` 10) . takeWhile (> 0) . iterate (`div` 10)
 
 doubleEveryOther :: [Integer] -> [Integer]
 doubleEveryOther = reverse . go . reverse
