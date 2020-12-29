@@ -7,10 +7,7 @@ toDigitsRev :: Integer -> [Integer]
 toDigitsRev = map (`rem` 10) . takeWhile (> 0) . iterate (`div` 10)
 
 doubleEveryOther :: [Integer] -> [Integer]
-doubleEveryOther = reverse . go . reverse
-  where
-    go (x:y:xs) = x : y * 2 : go xs
-    go xs       = xs
+doubleEveryOther = reverse . zipWith (*) (cycle [1, 2]) . reverse
 
 sumDigits :: [Integer] -> Integer
 sumDigits = sum . concatMap toDigits
