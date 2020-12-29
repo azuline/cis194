@@ -54,8 +54,8 @@ xor = foldr (/=) False
 map' :: (a -> b) -> [a] -> [b]
 map' f = foldr (\x xs -> f x : xs) []
 
-myFoldl :: (a -> b -> a) -> a -> [b] -> a
-myFoldl f base xs = error "Do this when I wake up..."
+-- myFoldl :: (a -> b -> a) -> a -> [b] -> a
+-- myFoldl f base xs = error "Do this when I wake up..."
 
 sieveSundaram :: Integer -> [Integer]
 sieveSundaram n = (+ 1) . (* 2) <$> [1..n] \\ numbersToRemove

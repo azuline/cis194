@@ -18,6 +18,10 @@ library
                    , Week02.LogAnalysis
                    , Week03.Golf
                    , Week04.Wholemeal
+                   , Week05.Calc
+                   , Week05.ExprT
+                   , Week05.Parser
+                   , Week05.StackVM
   hs-source-dirs:    src
   default-language:  Haskell2010
   build-depends:     base >= 4.7 && < 5
@@ -32,3 +36,9 @@ test-suite tests
   build-depends:     base >= 4.7 && < 5
                    , cis194
                    , hspec
+  other-modules:     Week01.CardValidatorSpec
+                   , Week01.TowerOfHanoiSpec
+                   , Week02.LogAnalysisSpec
+                   , Week03.GolfSpec
+                   , Week04.WholemealSpec
+                   , Week05.CalcSpec
