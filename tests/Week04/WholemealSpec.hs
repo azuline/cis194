@@ -1,3 +1,5 @@
+{-# OPTIONS_GHC -Wno-type-defaults #-}
+
 module Week04.WholemealSpec where
 
 import Week04.Wholemeal
@@ -42,10 +44,10 @@ spec =
         xor [False, True, False, False, True] `shouldBe` False
 
       it "map" $ do
-        map' (* (2 :: Integer)) [1, 2, 3, 4, 5] `shouldBe` [2, 4, 6, 8, 10]
+        map' (* 2) [1, 2, 3, 4, 5] `shouldBe` [2, 4, 6, 8, 10]
 
       it "map empty list" $ do
-        map' (* (2 :: Integer)) [] `shouldBe` []
+        map' (* 2) [] `shouldBe` []
 
     describe "exercise 4: finding primes" $ do
       it "n = 10" $ do
