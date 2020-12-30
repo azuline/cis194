@@ -23,10 +23,18 @@ library
                    , Week05.Parser
                    , Week05.StackVM
                    , Week06.Fibonacci
+                   , Week07.JoinList
+                   , Week07.Scrabble
+                   , Week07.Sized
+                   , Week07.Buffer
+                   , Week07.ScrabbleBuffer
+                   , Week07.Editor
+                   , Week07.ScrabbleBufEditor
   hs-source-dirs:    src
   default-language:  Haskell2010
   build-depends:     base >= 4.7 && < 5
                    , containers
+                   , mtl
 
 test-suite tests
   ghc-options:       -Wall
@@ -44,3 +52,5 @@ test-suite tests
                    , Week04.WholemealSpec
                    , Week05.CalcSpec
                    , Week06.FibonacciSpec
+                   , Week07.JoinListSpec
+                   , Week07.ScrabbleSpec
