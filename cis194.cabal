@@ -32,6 +32,7 @@ library
                    , Week07.ScrabbleBufEditor
                    , Week08.Party
                    , Week08.Employee
+                   , Week10.AParser
   hs-source-dirs:    src
   default-language:  Haskell2010
   build-depends:     base >= 4.7 && < 5
@@ -58,3 +59,4 @@ test-suite tests
                    , Week07.JoinListSpec
                    , Week07.ScrabbleSpec
                    , Week08.PartySpec
+                   , Week10.AParserSpec

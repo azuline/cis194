@@ -44,8 +44,8 @@ foldTree = foldr insert Leaf
         hr  = height tr
 
     height :: Tree a -> Integer
-    height Leaf            = -1
-    height (Node x _ _ _ ) = x
+    height Leaf           = -1
+    height (Node x _ _ _) = x
 
 xor :: [Bool] -> Bool
 xor = foldr (/=) False
