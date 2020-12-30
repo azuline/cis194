@@ -35,11 +35,13 @@ library
                    , Week10.AParser
                    , Week11.Lecture
                    , Week11.SExpr
+                   , Week12.Risk
   hs-source-dirs:    src
   default-language:  Haskell2010
   build-depends:     base >= 4.7 && < 5
                    , containers
                    , mtl
+                   , MonadRandom
 
 test-suite tests
   ghc-options:       -Wall
@@ -51,6 +53,7 @@ test-suite tests
                    , cis194
                    , hspec
                    , containers
+                   , MonadRandom
   other-modules:     Week01.CardValidatorSpec
                    , Week01.TowerOfHanoiSpec
                    , Week02.LogAnalysisSpec
@@ -64,3 +67,4 @@ test-suite tests
                    , Week10.AParserSpec
                    , Week11.LectureSpec
                    , Week11.SExprSpec
+                   , Week12.RiskSpec
