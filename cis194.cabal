@@ -33,6 +33,8 @@ library
                    , Week08.Party
                    , Week08.Employee
                    , Week10.AParser
+                   , Week11.Lecture
+                   , Week11.SExpr
   hs-source-dirs:    src
   default-language:  Haskell2010
   build-depends:     base >= 4.7 && < 5
@@ -60,3 +62,5 @@ test-suite tests
                    , Week07.ScrabbleSpec
                    , Week08.PartySpec
                    , Week10.AParserSpec
+                   , Week11.LectureSpec
+                   , Week11.SExprSpec
